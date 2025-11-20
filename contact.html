@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Contact | Sebastian</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+</head>
+<body>
+
+<div class="site-wrapper">
+
+<header>
+  <div class="container navbar">
+    <div class="logo">Sebastian</div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="skills.html">Skills</a></li>
+      <li><a href="works.html">Works</a></li>
+      <li><a href="contact.html" class="active">Contact</a></li>
+    </ul>
+  </div>
+</header>
+
+<main>
+<section class="section">
+  <div class="container section-card">
+
+    <h2 class="section-title">Contact Me</h2>
+    <p class="section-subtitle">Interested in working together? Send me a message.</p>
+
+    <div class="contact-grid">
+
+      <div>
+        <form class="contact-form">
+          <label>Name</label>
+          <input type="text" placeholder="Your name">
+
+          <label>Email</label>
+          <input type="email" placeholder="you@example.com">
+
+          <label>Message</label>
+          <textarea placeholder="Tell me about your project"></textarea>
+
+          <button type="submit" class="btn-primary">Send Message</button>
+        </form>
+      </div>
+
+      <div>
+        <h3>Email Me Directly</h3>
+        <p style="margin-top: 8px;">
+          <a href="mailto:youremail@example.com" class="highlight">youremail@example.com</a>
+        </p>
+
+        <div class="socials">
+          <a href="YOUR-LINKEDIN" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+          <a href="YOUR-GITHUB" target="_blank"><i class="fab fa-github"></i></a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>© <span id="year"></span> Sebastian</footer>
+</div>
+
+<script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+</body>
+</html>

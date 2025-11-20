@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Works | Sebastian</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+</head>
+<body>
+
+<div class="site-wrapper">
+<header>
+  <div class="container navbar">
+    <div class="logo">Sebastian</div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="skills.html">Skills</a></li>
+      <li><a href="works.html" class="active">Works</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </div>
+</header>
+
+<main>
+<section class="section">
+  <div class="container section-card">
+
+    <h2 class="section-title">Projects</h2>
+    <p class="section-subtitle">Real business-focused AWS projects I've built.</p>
+
+    <div class="works-grid">
+
+      <div class="work-card">
+        <h3>AWS Cost Tracking Dashboard</h3>
+        <p>Automated system that collects AWS CUR data, analyzes usage trends, and displays cost insights on an S3-hosted dashboard.</p>
+        <p><strong>Tech:</strong> S3, Glue, Athena, Lambda, SNS</p>
+      </div>
+
+      <div class="work-card">
+        <h3>Automated Backup Pipeline</h3>
+        <p>Reliable backup system using S3, versioning, lifecycle policies, and notifications to help small businesses protect critical data.</p>
+        <p><strong>Tech:</strong> S3, Lambda, SNS</p>
+      </div>
+
+      <div class="work-card">
+        <h3>Website Uptime Monitor</h3>
+        <p>Serverless uptime checker that tracks availability, latency, content validation, and stores logs for dashboard visibility.</p>
+        <p><strong>Tech:</strong> Lambda, CloudWatch, DynamoDB, SNS</p>
+      </div>
+
+      <div class="work-card">
+        <h3>AI Customer Inquiry Manager</h3>
+        <p>EC2-hosted app that uses Amazon Bedrock to classify inquiries into sales/support/billing and route them intelligently.</p>
+        <p><strong>Tech:</strong> EC2, Bedrock, RDS, SES</p>
+      </div>
+
+      <div class="work-card">
+        <h3>AI Inventory Tracker</h3>
+        <p>Predictive inventory system analyzing sales and forecasting restocking needs with daily AI insights.</p>
+        <p><strong>Tech:</strong> EC2, RDS, Bedrock, CloudWatch</p>
+      </div>
+
+    </div>
+
+    <div class="socials">
+      <a href="YOUR-GITHUB" target="_blank"><i class="fab fa-github"></i> View More</a>
+    </div>
+
+  </div>
+</section>
+</main>
+
+<footer>© <span id="year"></span> Sebastian</footer>
+
+</div>
+
+<script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+</body>
+</html>

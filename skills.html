@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Skills | Sebastian</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+</head>
+<body>
+
+<div class="site-wrapper">
+<header>
+  <div class="container navbar">
+    <div class="logo">Sebastian</div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="skills.html" class="active">Skills</a></li>
+      <li><a href="works.html">Works</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </div>
+</header>
+
+<main>
+<section class="section">
+  <div class="container section-card">
+
+    <h2 class="section-title">Skills</h2>
+    <p class="section-subtitle">Technologies I use to build real-world AWS solutions.</p>
+
+    <div class="skills-grid">
+
+      <div class="skill-item">
+        <h3>AWS Core Services</h3>
+        <p>EC2, S3, IAM, Lambda, API Gateway, VPC, CloudWatch, SNS</p>
+      </div>
+
+      <div class="skill-item">
+        <h3>Automation & Serverless</h3>
+        <p>Lambda workflows, EventBridge schedules, monitoring pipelines</p>
+      </div>
+
+      <div class="skill-item">
+        <h3>Databases</h3>
+        <p>DynamoDB, RDS MySQL, schema design, backups & restores</p>
+      </div>
+
+      <div class="skill-item">
+        <h3>Cost Optimization</h3>
+        <p>
+          Cost Explorer, budget alerts, custom dashboards, forecasting
+        </p>
+      </div>
+
+      <div class="skill-item">
+        <h3>AI on AWS</h3>
+        <p>Amazon Bedrock for text classification, summaries & predictions</p>
+      </div>
+
+      <div class="skill-item">
+        <h3>Web Development</h3>
+        <p>HTML, CSS, JavaScript for S3-hosted apps & dashboards</p>
+      </div>
+
+      <div class="skill-item">
+        <h3>DevOps Tools</h3>
+        <p>GitHub, Linux, VS Code, Postman, documentation</p>
+      </div>
+
+      <div class="skill-item">
+        <h3>Soft Skills</h3>
+        <p>Problem-solving, communication, cloud storytelling</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>© <span id="year"></span> Sebastian</footer>
+</div>
+
+<script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+</body>
+</html>
